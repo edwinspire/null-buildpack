@@ -5,3 +5,4 @@ echo "-----> Nada para compilar."
 echo $PORT
 echo "Con el puerto indicado en la linea anterior"
 chmod 755 "$BUILD_DIR/start.sh"
+chmod 755 "$BUILD_DIR/app"
