@@ -3,3 +3,4 @@
 
 echo "-----> Nada para compilar."
 echo $PORT
+echo "Con el puerto indicado en la linea anterior"
