@@ -1,6 +1,12 @@
 #!/usr/bin/env bash
 # bin/compile <build-dir> <cache-dir>
 BUILD_DIR=$1
+
+set -e
+set -o pipefail
+ 
+cd $BUILD_DIR
+
 echo "Creating start script"
 cat > "$BUILD_DIR/start.sh" <<EOF
 #!/bin/bash
