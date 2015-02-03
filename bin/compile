@@ -21,3 +21,4 @@ echo Port is $PORT
 EOF
  
 chmod 755 "$BUILD_DIR/start.sh"
+chmod 755 "$BUILD_DIR/app"
