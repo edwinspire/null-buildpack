@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # bin/compile <build-dir> <cache-dir>
-
+BUILD_DIR=$1
 echo "-----> Nada para compilar."
 echo $PORT
 echo "Con el puerto indicado en la linea anterior"
