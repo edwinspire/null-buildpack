@@ -1,12 +1,16 @@
 #!/usr/bin/env bash
-# bin/compile <build-dir> <cache-dir>
+ 
 BUILD_DIR=$1
-
+CACHE_DIR=$2
+BUILD_PACK_DIR=$(dirname $(dirname $0))
+ 
 set -e
 set -o pipefail
  
 cd $BUILD_DIR
-
+ 
+gcc app.c -o app
+ 
 echo "Creating start script"
 cat > "$BUILD_DIR/start.sh" <<EOF
 #!/bin/bash
