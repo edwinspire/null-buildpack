@@ -2,5 +2,4 @@
 # bin/compile <build-dir> <cache-dir>
 
 echo "-----> Nada para compilar."
-t = "Puerto asignado " $PORT
- echo  $t
+echo $PORT
