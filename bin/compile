@@ -18,6 +18,7 @@ cat > "$BUILD_DIR/start.sh" <<EOF
 export LD_LIBRARY_PATH=.
 echo "Starting C Application Server"
 echo Port is $PORT
+ldd /home/vcap/app/app
 /home/vcap/app/app
 EOF
  
