@@ -15,6 +15,7 @@ echo "Creating start script"
 cat > "$BUILD_DIR/start.sh" <<EOF
 #!/bin/bash
 # Start C Application Server
+export LD_LIBRARY_PATH=.
 echo "Starting C Application Server"
 echo Port is $PORT
 /home/vcap/app/app
